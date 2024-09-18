@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tobacco</title>
+    <!--Link do css-->
+    <link rel="stylesheet" href="style.css">
+    <!--Link para o favicon-->
+    <link rel="shortcut icon" href="Imagens/Logo Tobacco.png" type="image/x-icon">
+    <script src="index.js" defer></script>
+</head>
+<body>
+    <header>
+        <!--Logo do site-->
+        <img class="headerLogo" src="./Imagens/Logo Tobacco.png" alt="Logo da Tabacaria">
+        <!--Opções para direcionamento para outra página-->
+        <ul class="headerOpcoes">
+        <!--Encaminhamento para a página "sobre nós"-->
+            <li class="headerOpc"><a href="#">Sobre nós</a></li>
+        <!--Encaminhamento para a aba de produtos-->
+            <li class="headerOpc"><a href="#">Produtos</a></li>
+            <!--Abertura do PopUp para Entrar/Cadastro-->
+            <li class="headerOpc"><button id="abrirLogin" onclick="janelaLogin()">Entrar</button></li>
+        </ul>
+    </header>
+
+    <!--Section para o PopUp de aviso para menores-->
+    <section class="aviso" id="aviso">
+        <h1 class="tituloAviso">ATENÇÃO</h1>
+        <p class="textoAviso">Entrada permitida somente a maiores de 18 anos. <br> Está página contém produtos proibidos para menores.</p>
+        <button class="botaoAviso" id="confirmacao">Prosseguir</button>   
+    </section>
+
+    <!--Section para o PopUp login-->
+    <section>
+    </section>
+
+    <!--Section para o carrossel de banner-->
+    <section class="containerCarrossel">
+        <div class="containerBanners">
+            <!--Banner sobre linha esclusiva de Tabacos-->
+            <img src="Imagens/Banner Tobacco.jpeg" alt="Banner Promocional 1" class="banner On">
+            <!--Banner sobre os destaques-->
+            <img src="Imagens/Banner 2 test carrossel.jpeg" alt="Banner Promocional 2" class="banner">
+            <!--Banner para teste-->
+            <img src="Imagens/Banner 3 carrossel.jpeg" alt="Banner Promocional 3" class="banner">
+        </div>
+
+        <div class="botoesCarrossel">
+            <button class="botao selecionado"></button> 
+            <button class="botao"></button>
+            <button class="botao"></button>
+        </div>
+    </section>
+    <!--Section para o carrossel de cards sobre os produtos de destaques (9)-->
+    <section class="conteinerCards">
+        <div class="containerCardCarrossel">
+            <div class="tituloCards">
+                <img width="430vw" height="150vh" src="Imagens/Arabescos Grandes/2.png" alt="" class="divisoria">
+                <h1>Produtos Destaque</h1>
+                <img width="430vw" height="150vh" src="Imagens/Arabescos Grandes/1.png" alt="" class="divisoria">
+            </div>
+
+            <div class="produtosCarrosselCharuto">
+                <div class="secao">
+                    <h2 class="linhaCard">Charutos</h2>
+                    <div class="cardsCarrossel">
+                        <div class="card">
+                            <img width="180vw" height="180vh" src="Imagens/Produtos/Charutos, marca 1.png" alt="Charutos marca 1">
+                            <h3>Nome do Produto</h3>
+                            <button class="cta">Saiba Mais</button>
+                        </div>
+                        <div class="card">
+                            <img width="180vw" height="180vh" src="Imagens/Produtos/Cortador de Charutos.png" alt="Cortador de charutos">
+                            <h3>Nome do Produto</h3>
+                            <button class="cta">Saiba Mais</button>
+                        </div>
+                        <div class="card">
+                            <img width="180vw" height="180vh" src="Imagens/Produtos/Charutos, marca 2.png" alt="Charutos marca 2">
+                            <h3>Nome do Produto</h3>
+                            <button class="cta">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produtosCarrosselEletronicos">
+                <div class="secao">
+                    <h2 class="linhaCard">Eletrônicos</h2>
+                    <div class="cardsCarrossel">
+                        <div class="card">
+                            <img width="180vw" height="180vh" src="Imagens/Produtos/Cigarro Eletronico Azul.png" alt="">
+                            <h3>Nome do Produto</h3>
+                            <button class="cta">Saiba Mais</button>
+                        </div>
+                        <div class="card">
+                            <img width="180vw" height="180vh" src="Imagens/Produtos/Cigarro Eletronico Verde.png" alt="">
+                            <h3>Nome do Produto</h3>
+                            <button class="cta">Saiba Mais</button>
+                        </div>
+                        <div class="card">
+                            <img width="180vw" height="180vh" src="Imagens/Produtos/Cirrago Eletronico Vermelho.png" alt="">
+                            <h3>Nome do Produto</h3>
+                            <button class="cta">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="produtosCarrosselAcessorios">
+                <div class="secao">
+                    <h2 class="linhaCard">Acessórios</h2>
+                    <div class="cardsCarrossel">
+                        <div class="card">
+                            <img width="180vw" height="180vh" src="Imagens/Produtos/Cinzeiro.png" alt="">
+                            <h3>Nome do Produto</h3>
+                            <button class="cta">Saiba Mais</button>
+                        </div>
+                        <div class="card">
+                            <img width="180vw" height="180vh" src="Imagens/Produtos/Umidificador de Charutos.png" alt="">
+                            <h3>Nome do Produto</h3>
+                            <button class="cta">Saiba Mais</button>
+                        </div>
+                        <div class="card">
+                            <img width="180vw" height="180vh" src="Imagens/Produtos/Isqueiro.png" alt="">
+                            <h3>Nome do Produto</h3>
+                            <button class="cta">Saiba Mais</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section class="sobreNos"></section>
+        <div class="historia">
+            <img src="Imagens/Logo Tobacco.png"
+                 alt="Logo da Tobacco" class="imglogo">
+            <h2 class="titulohistoria">Nossa História</h2>
+            <p class="textohistoria">
+                A história da Tobacco começa com um trio de programadores apaixonados pelos melhores tabacos do mundo, sempre em busca das melhores formas de acesso a esses produtos. Pensando nisso, criamos um projeto que visa contribuir para que todas as classes sociais tenham acesso e possam desfrutar dos melhores cigarros e charutos disponíveis no mercado.</p>
+                <p>Nossa missão é transformar a experiência de compra em algo acessível, rápido e de qualidade. Através da nossa plataforma, oferecemos uma vasta gama de produtos selecionados, desde clássicos renomados até marcas exclusivas e artesanais. Queremos garantir que cada cliente tenha à disposição o que há de melhor no universo dos tabacos, independentemente de onde esteja ou da sua experiência com esses produtos.</p>
+                <p>Ao longo do tempo, continuaremos a inovar e a expandir nossos horizontes, sempre em busca das melhores novidades do mundo do tabaco. Afinal, para nós, tabaco é mais do que um produto: é uma tradição, uma arte, e uma experiência que merece ser vivida da melhor forma possível.</p>
+        </div>
+    </section>
+    <footer>
+        <!--Informações sobre a Tabacaria-->
+        <!--Formas de contato-->
+        <!--Endereço-->
+        <!--Redes Sociais-->
+    </footer>
+</body>
+</html>
